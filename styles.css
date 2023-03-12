@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');/*загрузка шрифта*/
+
+body { /*общие настройки проекта*/
+  background-color: #FDEBD0;
+  color: #663399;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+    
+.info { /*шапка страницы (лого + текст)*/
+    display: flex;
+    border-bottom: 2px solid blueviolet; 
+    padding-bottom: 20px;
+}
+
+.info p{
+    color: blueviolet;
+}
+
+.logo {
+    width: 300px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.columns { /*разбивка на колонки меню и рецепт*/
+    display: table;
+    width: 100%;
+    box-sizing: border-box;  
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.columns > div { /*характеристика всех колонок*/
+    display: table-cell;
+    vertical-align: top;
+    box-sizing: border-box;  
+}
+
+.menu { /*свойства колонки меню*/
+    width: 25%;
+    }
+
+.menu a { /*стилизация меню*/
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+.btn_prev { /*Кнопка предыдущая*/
+    display:inline-block;position:fixed;
+    width: 50px;
+    bottom:10px;right:105px;
+    text-align: center;
+    padding:5px 10px;font-size:16px;
+    background-color: rgba(240,128,128,0.5);
+    border-radius:15px
+}
+
+.btn_next { /*Кнопка следующая*/
+    display:inline-block;position:fixed;
+    text-align: center;
+    width: 50px;
+    bottom:10px;right:30px;
+    padding:5px 10px;font-size:16px;
+    background-color: rgba(240,128,128,0.5);
+    border-radius:15px
+}
+
+.btn_up { /*Кнопка вверх*/
+    display:inline-block;position:fixed;
+    width:50px;
+    text-align: center;
+    bottom:45px;right:30px;
+    padding:5px 10px;font-size:16px;
+    background-color: rgba(240,128,128,0.5);
+    border-radius:15px
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding:10px;
+    }
